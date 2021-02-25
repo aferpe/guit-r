@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import simpleaudio as sa, sys, os
+import simpleaudio as sa, sys
 
 # Tunings
 standard = ['E2', 'A2', 'D3', 'G3', 'B3', 'E4']
