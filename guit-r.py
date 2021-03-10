@@ -7,9 +7,10 @@ standard = ['E2', 'A2', 'D3', 'G3', 'B3', 'E4']
 drop_d = ['D2', 'A2', 'D3', 'G3', 'B3', 'E4']
 drop_c = ['C2', 'G2', 'C3', 'F3', 'A3', 'D4']
 
+fd = os.path.dirname(__file__)
 
 def play(note):
-    n = sa.WaveObject.from_wave_file(f'notes/{note}.wav')
+    n = sa.WaveObject.from_wave_file(f'{fd}/notes/{note}.wav')
     play_obj = n.play()
     play_obj.wait_done()
 
